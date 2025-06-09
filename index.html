@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Ayei Inyang Eni | WDD 130</title>
+
+  <meta name="description" content="Lucky Ayei Inyang Eni's personal home page for WDD 130 course, showcasing web development skills and personal interests." />
+  <meta name="author" content="Lucky Ayei Inyang Eni" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffffcc;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    main h1 {
+      color: #004080;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    main img {
+      border-radius: 50%;
+      margin-top: 1rem;
+      border: 4px solid #004080;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      /* Add smooth transition for transform */
+      transition: transform 1s ease;
+    }
+
+    /* Class to displace the image */
+    .displaced {
+      transform: translateX(50px);
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-top: 1rem;
+    }
+
+    aside {
+      width: 320px;
+      margin: 2rem auto;
+      border: 2px solid #004080;
+      padding: 1rem;
+      background-color: #004080;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    aside img {
+      width: 200px;
+      height: 120px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #004080;
+      color: white;
+      margin-top: 2rem;
+      border-top: 3px solid #ffdd57;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="wwr/">Rafting Website</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Lucky Ayei Inyang Eni | WDD 130</h1>
+
+    <picture>
+      <source srcset="images/profile.webp" type="image/webp" />
+      <source srcset="images/profile.jpg" type="image/jpeg" />
+      <img 
+        id="profile-pic"
+        src="images/profile.jpg" 
+        alt="Hello, my name is Lucky Ayei Inyang Eni" 
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://via.placeholder.com/150?text=Profile+Image';"
+        width="150" height="150"
+      />
+    </picture>
+
+    <p>Hello there! I'm Lucky Eni, a passionate web development student who loves crafting beautiful and functional websites. When I'm not coding, you'll find me on the street exercising or capturing the beauty of nature through my camera lens. Let's build something amazing together!</p>
+  </main>
+
+  <aside>
+    <h2>Nigeria</h2>
+    <img 
+      src="images/nigeria-flag.jpg" 
+      alt="Flag of Nigeria" 
+      loading="lazy"
+      onerror="this.onerror=null;this.src='https://via.placeholder.com/200x120?text=Nigeria+Flag';"
+      width="200" height="120"
+    />
+    <p>Nigeria is a vibrant and diverse country in West Africa, known for its rich culture, beautiful landscapes, and growing technology scene. I am proud to explore and represent Nigeria through my web projects.</p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 | Lucky Ayei Inyang Eni | Exploring the Web from Nigeria</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      const profilePic = document.getElementById('profile-pic');
+      // Add class to displace image
+      profilePic.classList.add('displaced');
+    });
+  </script>
+</body>
+</html>
