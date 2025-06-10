@@ -23,7 +23,8 @@ body {
 
 /* Layout Constraints */
 header, main, footer {
-  width: 840px;
+  width: 100%;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -194,3 +195,25 @@ nav ul li a:hover {
 footer {
   text-align: center;
   padding: 16px;
+  background-color: var(--accent2-color);
+  border-top: 3px solid var(--primary-color);
+}
+
+footer .socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+footer .socialmedia a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+footer .socialmedia img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
