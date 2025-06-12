@@ -63,11 +63,9 @@
       width: 150px;
       height: 150px;
       object-fit: cover;
-      /* Add smooth transition for transform */
       transition: transform 1s ease;
     }
 
-    /* Class to displace the image */
     .displaced {
       transform: translateX(50px);
     }
@@ -76,6 +74,7 @@
       font-size: 1.1rem;
       line-height: 1.6;
       margin-top: 1rem;
+      padding: 0;
     }
 
     aside {
@@ -154,7 +153,6 @@
   <script>
     window.addEventListener('load', () => {
       const profilePic = document.getElementById('profile-pic');
-      // Add class to displace image
       profilePic.classList.add('displaced');
     });
   </script>
